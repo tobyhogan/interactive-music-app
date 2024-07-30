@@ -1,0 +1,30 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px !important;
+}
+
+
+.MusicButton1 {
+  width: 100px;
+  height: 200px;
+  background-color: #aaaaaa;
+  border: 1px solid #333333;
+  border-radius: 5px;
+
+  margin: 0 1px;
+
+
+
+}
+
+
+.MusicButton1:hover {
+  background-color: #999999;
+}
