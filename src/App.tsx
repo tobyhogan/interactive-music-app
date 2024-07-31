@@ -15,7 +15,11 @@ function App() {
     oscillator.frequency.value = frequency; // value in hertz
 
 
-    oscillator.connect(audioCtx.destination);
+    oscillator.connect(gainNode);
+    gainNode.connect(audioCtx.destination)
+
+    gainNode.gain.value = 0.01
+
     oscillator.start();
 
 
@@ -25,6 +29,7 @@ function App() {
         playMelody();
       }, duration);
   }
+
 
   function playMelody() {
     if (notes.length > 0) {
